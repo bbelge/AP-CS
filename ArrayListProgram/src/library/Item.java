@@ -9,11 +9,11 @@ public abstract class Item {
 		title = "";
 	}
 	
-	//getters and setters
 	public Item(String t){
 		title = t;
 	}
 	
+	//getters and setters
 	public void setTitle(String t){
 		title = t;
 	}
