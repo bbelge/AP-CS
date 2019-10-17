@@ -109,6 +109,10 @@ public class Fraction implements number{
 		else
 			return true;
 	}
+	
+	public String toString() {
+		return Num + "/" + Den;
+	}
 }
 
 
