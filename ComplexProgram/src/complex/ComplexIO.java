@@ -52,7 +52,7 @@ public class ComplexIO {
 					default: throw new IllegalArgumentException();
 					}
 
-					System.out.println("Solution: " + ((ComplexNumber) num2).getReal() + " + " + ((ComplexNumber) num2).getComplex() + "i");
+					System.out.println("Solution: " + num2);
 					
 				}else if (choose == 'F'){
 					System.out.print("Enter numerator of first fraction: ");
@@ -73,14 +73,14 @@ public class ComplexIO {
 					op = reader.readInt();
 
 					switch (op){
-						case 1: num2 = (Fraction)num.add(num1); break;
-						case 2: num2 = (Fraction)num.subtract(num1); break;
-						case 3: num2 = (Fraction)num.multiply(num1); break;
-						case 4: num2 = (Fraction)num.divide(num1); break;
+						case 1: num2 = num.add(num1); break;
+						case 2: num2 = num.subtract(num1); break;
+						case 3: num2 = num.multiply(num1); break;
+						case 4: num2 = num.divide(num1); break;
 						default: throw new IllegalArgumentException();
 					}
 
-					System.out.println("Solution: " + ((Fraction) num2).getNum() + "/" + ((Fraction) num2).getDen());
+					System.out.println("Solution: " + num2);
 
 				}else{
 					System.out.println("Invalid input, please try again.");
