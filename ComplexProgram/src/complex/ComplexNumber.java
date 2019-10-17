@@ -70,5 +70,9 @@ public class ComplexNumber implements number{
 	public void setReal(double r){
 		real = r;
 	}
+	
+	public String toString() {
+		return real + " + " + complex + "i";
+	}
 }
 
